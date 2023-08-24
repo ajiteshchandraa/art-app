@@ -5,7 +5,7 @@ class PaintingsController < ApplicationController
   end
 
   def show
-    @painting = Painting.find(params [:id])
+    @painting = Painting.find(params[:id])
   end
 
   def new
@@ -20,7 +20,7 @@ class PaintingsController < ApplicationController
   end
 
   def destroy
-    @painting = Painting.find(params [:id])
+    @painting = Painting.find(params[:id])
     @painting.destroy
     redirect_to paintings_path
   end
