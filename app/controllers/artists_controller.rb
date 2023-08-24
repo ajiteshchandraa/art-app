@@ -5,7 +5,7 @@ class ArtistsController < ApplicationController
   end
 
   def show
-    @artist = Artist.find(params [: id])
+    @artist = Artist.find(params [:id])
   end
 
   def new
@@ -41,4 +41,5 @@ class ArtistsController < ApplicationController
   def artist_params
     params. require(:artist).permit(:name, :age, :experience)
   end
+
 end
