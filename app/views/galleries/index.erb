@@ -1,0 +1,7 @@
+<h2>List of Amazing Galleries<h2>
+
+<ul>
+  <% @galleries.each do |gallery| %>
+    <li><%= link_to gallery.name, gallery %></li><br>
+  <% end %>
+</ul>
