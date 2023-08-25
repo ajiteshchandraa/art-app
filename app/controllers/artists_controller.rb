@@ -39,7 +39,7 @@ class ArtistsController < ApplicationController
   private
 
   def artist_params
-    params. require(:artist).permit(:name, :age, :experience)
+    params. require(:artist).permit(:name, :age, :experience_level)
   end
 
 end

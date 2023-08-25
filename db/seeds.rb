@@ -1,14 +1,13 @@
-Artist.destroy_all
-Gallery.destroy_all
 Painting.destroy_all
+Gallery.destroy_all
+Artist.destroy_all
 
-
-artist1 = Artist.create(name: "Leo", age: 100, experience: 1000)
-artist2 = Artist.create(name: "Vincent", age: 42, experience: 384)
-artist3 = Artist.create(name: "Mark", age: 77, experience: 56)
-artist4 = Artist.create(name: "Ralph", age: 150, experience: 433)
-artist5 = Artist.create(name: "Maria", age: 33, experience: 76)
-artist6 = Artist.create(name: "Rose", age: 10, experience: 950)
+artist1 = Artist.create(name: "Leo", age: 100, experience_level: 1000)
+artist2 = Artist.create(name: "Vincent", age: 42, experience_level: 384)
+artist3 = Artist.create(name: "Mark", age: 77, experience_level: 56)
+artist4 = Artist.create(name: "Ralph", age: 150, experience_level: 433)
+artist5 = Artist.create(name: "Maria", age: 33, experience_level: 76)
+artist6 = Artist.create(name: "Rose", age: 10, experience_level: 950)
 
 gal1 = Gallery.create(name: "gallery 1", location: "NY")
 gal2 = Gallery.create(name: "gallery 2", location: "LA")
